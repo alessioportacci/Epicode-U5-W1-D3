@@ -1,0 +1,28 @@
+﻿@model List<Epicode_U5_W1_D3.Models.ProdottoModel>
+
+
+@{
+    ViewBag.Title = "Home Page";
+    //Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<main>
+
+    @foreach (Epicode_U5_W1_D3.Models.ProdottoModel prodotto in Model)
+    {
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="..." alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title"> @prodotto.Nome </h5>
+                <p class="card-text"> @prodotto.Descrizione </p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+    }
+
+</main>
+
+@functions
+{
+
+}
